@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>surajk95</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
+      function togglesidebar(){
+        var classList=document.getElementById('sidebar').classList;
+        if(classList.contains('open')){
+          document.getElementById('sidebar-toggle').innerHTML=">>";
+          classList.remove('open');
+          classList.add('close');
+        }
+        else{
+          document.getElementById('sidebar-toggle').innerHTML="<<";
+          classList.remove('close');
+          classList.add('open');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebar-toggle" onclick="togglesidebar()">
+        >>
+      </div>
+      <div class="sidebar-item">
+        <a href="work.html">WORK</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="work.html">STUDY</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="work.html">SHOWCASE</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="work.html">PLAY</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="page-title">surajk95</div>
+      <div class="social">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="far fa-envelope-open" style="font-size: 1.2em;"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </body>
+</html>

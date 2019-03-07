@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400');
+
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#sidebar{
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 2;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+
+.open{
+/*left: 100px !important; */
+  transform: translateX(100%);
+  transition-duration: 0.4s;
+}
+
+.close{
+/*left: 0; */
+  transform: translateX(0);
+  transition-duration: 0.4s;
+}
+
+#sidebar-toggle{
+    position: absolute;
+    top: 20px;
+    padding: 5px 10px;
+    font-size: 2em;
+    color: red;
+    cursor: pointer;
+    right: -55px;
+}
+
+.sidebar-item{
+  margin: 15px 0;
+  font-weight: 300;
+  line-height: 0px;
+  padding: 3px 20px;
+  cursor: pointer;
+  color: #ddd;
+}
+.sidebar-item:hover{
+  border-bottom: 4px solid red;
+  margin: 14px 0;
+}
+
+.social{
+  position:absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.social>*{
+  font-size: 1.25em;
+  padding: 2px 6px;
+}
+
+/*      Styles for Mobile Devices     */
+
+@media (max-width: 1024px){
+  body{
+    font-size: 3em;
+  }
+  #sidebar{
+    width: 85vw;
+    left: -85%;
+    padding: 100px 0 0 20px;
+  }
+  .sidebar-item{
+    font-size: 1em;
+    margin: 40px 0;
+  }
+  #sidebar-toggle{
+    right: -135px;
+  }
+  .social>*{
+    padding: 2px 13px;
+  }
+}
