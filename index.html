@@ -3,6 +3,21 @@
     <title>surajk95</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
+      function togglesidebar(){
+        var classList=document.getElementById('sidebar').classList;
+        if(classList.contains('open')){
+          document.getElementById('sidebar-toggle').innerHTML=">>";
+          classList.remove('open');
+          classList.add('close');
+        }
+        else{
+          document.getElementById('sidebar-toggle').innerHTML="<<";
+          classList.remove('close');
+          classList.add('open');
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="sidebar">
@@ -10,16 +25,19 @@
         >>
       </div>
       <div class="sidebar-item">
+        <a href="index.html">HOME</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="play.html">PLAY</a>
+      </div>
+      <div class="sidebar-item">
         <a href="work.html">WORK</a>
       </div>
       <div class="sidebar-item">
-        <a href="work.html">STUDY</a>
+        <a href="study.html">STUDY</a>
       </div>
       <div class="sidebar-item">
-        <a href="work.html">SHOWCASE</a>
-      </div>
-      <div class="sidebar-item">
-        <a href="work.html">PLAY</a>
+        <a href="showcase.html">SHOWCASE</a>
       </div>
     </div>
     <div class="main-content">
@@ -59,20 +77,5 @@
     </div>
     <script src="leetify.js"></script>
     <script>window.onload=leetify('SURAJK95', 'white', '32px');</script>
-    <script>
-      function togglesidebar(){
-        var classList=document.getElementById('sidebar').classList;
-        if(classList.contains('open')){
-          document.getElementById('sidebar-toggle').innerHTML=">>";
-          classList.remove('open');
-          classList.add('close');
-        }
-        else{
-          document.getElementById('sidebar-toggle').innerHTML="<<";
-          classList.remove('close');
-          classList.add('open');
-        }
-      }
-    </script>
   </body>
 </html>

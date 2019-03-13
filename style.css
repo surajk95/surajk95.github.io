@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Share+Tech+Mono|PT+Sans+Narrow');
 
 body{
   background-color: black;
@@ -79,6 +79,7 @@ a{
   justify-content: center;
   padding: 0 50px;
 }
+
 .intro{
   padding: 70px 0;
 }
@@ -120,6 +121,38 @@ video {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+img{
+  border-radius: 2px;
+}
+.inner-page{
+  justify-content:flex-start;
+  align-items: initial;
+}
+.list-item{
+  display: flex;
+  padding: 10px 10px;
+}
+.list-item-text{
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  margin-left: 50px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.list-item-title{
+    font-size: 2.5em;
+}
+.separator{
+  font-size: 3em;
+  padding: 0 20px;
+}
+.list-item-description{
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
 /*      Styles for Mobile Devices     */
 
 @media (max-width: 1024px){
