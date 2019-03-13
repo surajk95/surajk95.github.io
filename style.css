@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Share+Tech+Mono');
 
 body{
   background-color: black;
@@ -68,7 +68,7 @@ a{
 
 .page-title{
   padding: 20px 0;
-  font-family: monospace;
+  font-family: 'Share Tech Mono';
   font-size: 2em;
 }
 .main-content{

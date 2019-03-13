@@ -3,21 +3,6 @@
     <title>surajk95</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script>
-      function togglesidebar(){
-        var classList=document.getElementById('sidebar').classList;
-        if(classList.contains('open')){
-          document.getElementById('sidebar-toggle').innerHTML=">>";
-          classList.remove('open');
-          classList.add('close');
-        }
-        else{
-          document.getElementById('sidebar-toggle').innerHTML="<<";
-          classList.remove('close');
-          classList.add('open');
-        }
-      }
-    </script>
   </head>
   <body>
     <div id="sidebar">
@@ -38,7 +23,7 @@
       </div>
     </div>
     <div class="main-content">
-      <div class="page-title">SURAJK95</div>
+      <div class="page-title" id="leetify">SURAJK95</div>
       <div class="main-content">
         <div class="intro">
           Hi! I'm Suraj.
@@ -64,7 +49,7 @@
         <a href="https://www.linkedin.com/in/surajk95/" target="_blank" aria-label="LinkedIn Profile" rel="nofollow noreferrer">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="mailto:surajkukati95@gmail.com" target="_blank" aria-label="Mail link" rel="nofollow noreferrer">
+        <a href="mailto:surajkukati95@gmail.com" target="_blank" aria-label="Email link" rel="nofollow noreferrer">
           <i class="far fa-envelope-open"></i>
         </a>
         <a href="https://www.instagram.com/surajk95/" target="_blank" aria-label="Github Link" rel="nofollow noreferrer">
@@ -72,5 +57,22 @@
         </a>
       </div>
     </div>
+    <script src="leetify.js"></script>
+    <script>window.onload=leetify('SURAJK95', 'white', '32px');</script>
+    <script>
+      function togglesidebar(){
+        var classList=document.getElementById('sidebar').classList;
+        if(classList.contains('open')){
+          document.getElementById('sidebar-toggle').innerHTML=">>";
+          classList.remove('open');
+          classList.add('close');
+        }
+        else{
+          document.getElementById('sidebar-toggle').innerHTML="<<";
+          classList.remove('close');
+          classList.add('open');
+        }
+      }
+    </script>
   </body>
 </html>
