@@ -41,12 +41,13 @@
       <div class="page-title" id="leetify">SURAJK95</div>
       <div class="main-content">
         <div class="intro">
-          Hi! I'm Suraj.
-          I love Javascript and Dark mode.<br/>
-          I'm currently working as a Front-End Developer,<br/>
-          mainly focusing on optimising code, and CSS for performance.<br/>
-          My main interests are all things React and Javascript.<br/>
-          I'm also a Visual Artist, known for spending way too much time on <br/>photography, film-making, blogging and story-writing among others.
+          > init Suraj<br/>
+          > Front-End Developer<br/>
+          > Current Task: Optimising code, and CSS for performance.<br/>
+          > Current Library: ReactJs<br/>
+          > Hobbies: Visual Artist, known for spending way too much time on <br/>
+          > photography, film-making, blogging and story-writing among others.<br/>
+          <span id="blink-cursor">&nbsp;</span>
         </div>
         <div class="video-container">
           <video autoplay muted loop poster="poster.jpg">
@@ -73,6 +74,14 @@
       </div>
     </div>
     <script src="leetify.js"></script>
-    <script>window.onload=leetify('SURAJK95', 'white', '32px');</script>
+    <script>window.onload=leetify('SURAJK95', 'white', '50px', '50');</script>
+    <script>
+    window.onload=blinkcursor();
+    function blinkcursor(){
+      let blinkElement=document.getElementById('blink-cursor');
+      blinkElement.classList.toggle('active-cursor');
+      setTimeout(blinkcursor, 500);
+    }
+    </script>
   </body>
 </html>

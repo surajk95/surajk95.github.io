@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Share+Tech+Mono|PT+Sans+Narrow');
 
 body{
-  background-color: black;
+  background-color: #040416;
   color: white;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
@@ -72,16 +72,27 @@ a{
   font-size: 2em;
 }
 .main-content{
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 50px;
 }
 
 .intro{
-  padding: 70px 0;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: left;
+  background-color: crimson;
+  line-height: 1.5;
+}
+#blink-cursor{
+  width:20px;
+  background-color: white;
+  white-space: pre;
+}
+.active-cursor{
+  background-color:inherit !important;
 }
 .play-shortcut{
   cursor: pointer;
@@ -107,7 +118,7 @@ a{
 
 .video-container {
     height: 300px;
-    width: 90vw;
+    width: 100vw;
     overflow: hidden;
     position: relative;
 }
