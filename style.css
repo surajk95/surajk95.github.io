@@ -51,6 +51,7 @@ a{
     color: red;
     cursor: pointer;
     right: -55px;
+    font-weight: 700;
 }
 
 .sidebar-item{
@@ -97,18 +98,17 @@ a{
 .play-shortcut{
   cursor: pointer;
   font-size: 4em;
-  position: absolute;
-  top: 120px;
+  margin-top: 120px;
 }
 
 .social{
-  position:absolute;
-  bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-    cursor: pointer;
+  cursor: pointer;
 }
 .social>*{
   font-size: 1.25em;
