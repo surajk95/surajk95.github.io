@@ -273,7 +273,8 @@ img{
   }
   .intro{
     margin: 100px 0;
-    font-size: 13px;
+    font-size: 12px;
+    width: 80vw;
   }
   .play-shortcut{
     margin-top: 60px;
