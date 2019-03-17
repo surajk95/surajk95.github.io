@@ -56,7 +56,7 @@ divider{
     top: 20px;
     padding: 5px 10px;
     font-size: 2em;
-    color: red;
+    color: #FF0000;
     cursor: pointer;
     right: -55px;
     font-weight: 700;
@@ -81,7 +81,7 @@ divider{
   font-size: 2em;
 }
 .input-text{
-  color: limegreen;
+  color: #80FF00;
 }
 .main-content{
   display: flex;
@@ -258,19 +258,22 @@ img{
     margin: 65px 0;
     color: darkgray;
   }
+  .sidebar-item:hover{
+    border:0;
+    margin: 65px 0;
+  }
   #sidebar-toggle{
     right: -135px;
   }
   .social{
-    position: absolute;
-    bottom: 10px;
+    margin-top: 100px;
   }
   .social>*{
     padding: 2px 13px;
   }
   .intro{
     margin: 100px 0;
-    font-size: 0.3em;
+    font-size: 13px;
   }
   .play-shortcut{
     margin-top: 60px;
@@ -299,6 +302,12 @@ img{
   }
   .play-item-image img{
     width: 700px;
+  }
+  .work-item-description{
+    width: fit-content;
+  }
+  .work-item-date{
+    width: fit-content;
   }
   .work-item-tags{
     margin: 20px 0;
