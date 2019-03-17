@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>surajk95</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
+      function togglesidebar(){
+        var classList=document.getElementById('sidebar').classList;
+        if(classList.contains('open')){
+          document.getElementById('sidebar-toggle').innerHTML=">>";
+          classList.remove('open');
+          classList.add('close');
+        }
+        else{
+          document.getElementById('sidebar-toggle').innerHTML="<<";
+          classList.remove('close');
+          classList.add('open');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebar-toggle" onclick="togglesidebar()">
+        >>
+      </div>
+      <div class="sidebar-item">
+        <a href="index.html">HOME</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="work.html">WORK</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="play.html">PLAY</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="showcase.html">SHOWCASE</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="page-title" id="leetify">SURAJK95</div>
+      <div class="main-content">
+        <div class="intro">
+          > <span class="input-text">init Suraj</span><br/>
+          > Front-End Developer<br/>
+          > <span class="input-text">Current Task:</span><br/>
+          > Optimising code, and CSS for performance.<br/>
+          > Realising Zeplin mock-ups into actual Webpages<br/>
+          > <span class="input-text">Current Library:</span><br/>
+          > ReactJs<br/>
+          > <span class="input-text">Hobbies:</span><br/>
+          > Visual Artist, known for spending way too much time on <br/>
+          > photography, film-making, blogging and story-writing among others.<br/>
+          <span id="blink-cursor">&nbsp;</span>
+        </div>
+        <div class="video-container">
+          <video autoplay muted loop poster="assets/poster.jpg">
+            <source src="assets/Showreel.mp4" type="video/mp4">
+          </video>
+          <a href="play.html">
+            <i class="fas fa-play-circle play-shortcut"></i>
+          </a>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://github.com/surajk95" target="_blank" aria-label="Github Profile" rel="nofollow noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/surajk95/" target="_blank" aria-label="LinkedIn Profile" rel="nofollow noreferrer">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:surajkukati95@gmail.com" target="_blank" aria-label="Email link" rel="nofollow noreferrer">
+          <i class="far fa-envelope-open"></i>
+        </a>
+        <a href="https://www.instagram.com/surajk95/" target="_blank" aria-label="Github Link" rel="nofollow noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <script src="leetify.js"></script>
+    <script>window.onload=leetify('SURAJK95', 'white', '45px', '50');</script>
+    <script>
+    window.onload=blinkcursor();
+    function blinkcursor(){
+      let blinkElement=document.getElementById('blink-cursor');
+      blinkElement.classList.toggle('active-cursor');
+      setTimeout(blinkcursor, 500);
+    }
+    </script>
+  </body>
+</html>
