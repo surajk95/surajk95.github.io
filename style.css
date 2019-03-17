@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Share+Tech+Mono|PT+Sans+Narrow');
 
 body{
-  background-color: #040416;
+  background-color: #00000D;
+  background-image: url('assets/wd1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
@@ -15,6 +18,11 @@ a{
   color: inherit;
 }
 
+divider{
+  margin: 10px 0;
+  border-top: 5px solid seagreen;
+  width: 100%;
+}
 
 #sidebar{
   position: absolute;
@@ -72,6 +80,9 @@ a{
   font-family: 'Share Tech Mono';
   font-size: 2em;
 }
+.input-text{
+  color: limegreen;
+}
 .main-content{
   display: flex;
   flex-direction: column;
@@ -82,9 +93,11 @@ a{
 .intro{
   padding: 20px 20px;
   margin-bottom: 30px;
+  font-size: 0.9em;
   font-weight: 600;
   text-align: left;
-  background-color: crimson;
+  background-color: black;
+  color: white;
   line-height: 1.5;
 }
 #blink-cursor{
@@ -118,7 +131,7 @@ a{
 
 .video-container {
     height: 300px;
-    width: 100vw;
+    width: 98vw;
     overflow: hidden;
     position: relative;
 }
@@ -134,36 +147,101 @@ video {
 }
 
 img{
-  border-radius: 2px;
+  border-radius: 0px;
 }
 .inner-page{
+  padding: 0 20%;
+  text-align: left;
   justify-content:flex-start;
   align-items: initial;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
-.list-item{
-  display: flex;
-  padding: 10px 10px;
+.play-heading{
+  padding: 2px 10px;
+  font-size: 0.7em;
+  background-color: seagreen;
 }
-.list-item-text{
+.play-item{
   display: flex;
   align-items: center;
+  padding: 10px 10px;
+}
+.play-item-text{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px 10px;
-  margin-left: 50px;
+  margin-left: -50px;
   font-family: 'PT Sans Narrow', sans-serif;
+  height: fit-content;
+  border-radius: 2px;
 }
-.list-item-title{
+.play-item-title{
+    font-size: 1.5em;
+}
+.play-item-description{
+  padding: 2px 0;
+  font-size: 0.5em;
+  letter-spacing: 0;
+}
+.skills{
+  display: inline-block;
+  text-align: center;
+  font-size: 0.7em;
+}
+.skills i{
     font-size: 2.5em;
+    cursor: pointer;
+    margin: 10px 5px;
 }
-.separator{
-  font-size: 3em;
-  padding: 0 20px;
+.fa-react{
+  color:#00d8ff;
 }
-.list-item-description{
-  padding: 10px 0;
-  margin-top: 10px;
-  font-size: 1.5em;
+.fa-js{
+  color: #f7df1e;
 }
-
+.fa-node{
+  color: #6cc24a;
+}
+.work-heading{
+  margin: 10px 0;
+  border-bottom: 0 solid seagreen;
+}
+.work-heading span{
+  padding: 2px 10px;
+  background-color: seagreen;
+}
+.work-item{
+  margin: 10px 0;
+}
+.work-item-text{
+  display: flex;
+  justify-content:space-between;
+  font-size: 0.7em;
+}
+.showcase-item-title{
+  color: chartreuse;
+}
+.work-item-description{
+  background-color: crimson;
+  padding: 2px 10px;
+  font-weight: 400;
+  letter-spacing: -0.8;
+  line-height: 2;
+}
+.work-item-date{
+  font-size: 0.8em;
+  padding: 10px 10px;
+  background-color: darkviolet;
+}
+.work-item-tag{
+  background-color: green;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
 /*      Styles for Mobile Devices     */
 
 @media (max-width: 1024px){
@@ -176,13 +254,53 @@ img{
     padding: 100px 0 0 20px;
   }
   .sidebar-item{
-    font-size: 1em;
-    margin: 40px 0;
+    font-size: 1.4em;
+    margin: 65px 0;
+    color: darkgray;
   }
   #sidebar-toggle{
     right: -135px;
   }
+  .social{
+    position: absolute;
+    bottom: 10px;
+  }
   .social>*{
     padding: 2px 13px;
+  }
+  .intro{
+    margin: 100px 0;
+    font-size: 0.3em;
+  }
+  .play-shortcut{
+    margin-top: 60px;
+  }
+  .inner-page{
+    font-size: 1.1em;
+    padding: 0 7%;
+  }
+  .skills{
+    margin: 50px 0;
+  }
+  .work-heading{
+    margin-top: 100px;
+  }
+  .work-item-text{
+    flex-direction: column;
+  }
+  .work-item-title{
+    margin: 20px 0;
+  }
+  .play-heading{
+    margin-top: 100px;
+  }
+  .play-item{
+    flex-direction: column;
+  }
+  .play-item-image img{
+    width: 700px;
+  }
+  .work-item-tags{
+    margin: 20px 0;
   }
 }
