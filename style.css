@@ -159,25 +159,29 @@ img{
   letter-spacing: -1px;
 }
 .play-heading{
+  width: fit-content;
   padding: 2px 10px;
-  font-size: 0.7em;
-  background-color: seagreen;
+  font-size: 1em;
+  background-color: crimson;
+  box-shadow: 6px 8px white;
+  margin-bottom: 50px;
 }
 .play-item{
   display: flex;
   align-items: center;
-  padding: 10px 10px;
+  padding: 50px 10px;
 }
 .play-item-text{
+  width: fit-content;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 10px;
-  margin-left: -50px;
+  padding: 5px 10px;
   font-family: 'PT Sans Narrow', sans-serif;
   height: fit-content;
-  border-radius: 2px;
+  border-radius: 0;
+  margin-right: 50px;
 }
 .play-item-title{
     font-size: 1.5em;
@@ -187,10 +191,14 @@ img{
   font-size: 0.5em;
   letter-spacing: 0;
 }
+.play-item-image{
+  box-shadow: 12px 12px darkblue;
+}
 .skills{
   display: inline-block;
   text-align: center;
   font-size: 0.7em;
+  margin: 0 0 50px;
 }
 .skills i{
     font-size: 2.5em;
@@ -208,11 +216,12 @@ img{
 }
 .work-heading{
   margin: 10px 0;
-  border-bottom: 0 solid seagreen;
+  width: fit-content;
+  box-shadow: 5px 7px purple;
 }
 .work-heading span{
   padding: 2px 10px;
-  background-color: seagreen;
+  background-color: crimson;
 }
 .work-item{
   margin: 10px 0;
@@ -227,10 +236,10 @@ img{
 }
 .work-item-description{
   background-color: crimson;
-  padding: 2px 10px;
+  padding: 10px 10px;
   font-weight: 400;
   letter-spacing: -0.8;
-  line-height: 2;
+  line-height: 1;
 }
 .work-item-date{
   font-size: 0.8em;
@@ -276,12 +285,13 @@ img{
     padding: 2px 13px;
   }
   .intro{
-    margin: 100px 0;
-    font-size: 12px;
+    margin: 120px 0;
+    font-size: 14px;
     width: 80vw;
   }
   .play-shortcut{
-    margin-top: 60px;
+    margin-top: 95px;
+    font-size: 2em;
   }
   .inner-page{
     font-size: 1.1em;
