@@ -325,6 +325,9 @@ img{
   .play-item{
     flex-direction: column;
   }
+  .play-item-text{
+    margin-bottom: 50px;
+  }
   .play-item-image img{
     width: 700px;
   }
@@ -336,5 +339,8 @@ img{
   }
   .work-item-tags{
     margin: 20px 0;
+  }
+  .showcase-mob{
+    box-shadow: none;
   }
 }
