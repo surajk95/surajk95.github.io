@@ -25,6 +25,9 @@ divider{
 }
 
 #sidebar{
+  background-image: url('assets/sidebar.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   left: -200px;
   top: 0;
@@ -162,9 +165,11 @@ img{
   width: fit-content;
   padding: 2px 10px;
   font-size: 1em;
+  font-weight: 300;
   background-color: crimson;
-  box-shadow: 6px 8px white;
+  box-shadow: 6px 8px purple;
   margin-bottom: 50px;
+  letter-spacing: -3px;
 }
 .play-item{
   display: flex;
@@ -173,15 +178,17 @@ img{
 }
 .play-item-text{
   width: fit-content;
-  background-color: black;
+  background-color: white;
+  color: #F23665;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5px 10px;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: Consolas, sans-serif;
   height: fit-content;
   border-radius: 0;
   margin-right: 50px;
+  box-shadow: 5px 5px white;
 }
 .play-item-title{
     font-size: 1.5em;
@@ -192,7 +199,8 @@ img{
   letter-spacing: 0;
 }
 .play-item-image{
-  box-shadow: 12px 12px darkblue;
+  box-shadow: 10px 9px gray;
+  border: 9px solid white;
 }
 .skills{
   display: inline-block;
@@ -215,9 +223,11 @@ img{
   color: #6cc24a;
 }
 .work-heading{
-  margin: 10px 0;
+  margin: 10px 0 50px;
   width: fit-content;
   box-shadow: 5px 7px purple;
+  letter-spacing: -3px;
+  font-weight: 300;
 }
 .work-heading span{
   padding: 2px 10px;
@@ -235,7 +245,7 @@ img{
   color: chartreuse;
 }
 .work-item-description{
-  background-color: crimson;
+  background-color: #18864F;
   padding: 10px 10px;
   font-weight: 400;
   letter-spacing: -0.8;
