@@ -163,6 +163,7 @@ img{
 }
 .play-heading{
   width: fit-content;
+  width: -moz-min-content;
   padding: 2px 10px;
   font-size: 1em;
   font-weight: 300;
@@ -178,6 +179,7 @@ img{
 }
 .play-item-text{
   width: fit-content;
+  width: -moz-min-content;
   background-color: white;
   color: #F23665;
   display: flex;
@@ -225,6 +227,7 @@ img{
 .work-heading{
   margin: 10px 0 50px;
   width: fit-content;
+  width: -moz-min-content;
   box-shadow: 5px 7px purple;
   letter-spacing: -3px;
   font-weight: 300;
@@ -333,9 +336,11 @@ img{
   }
   .work-item-description{
     width: fit-content;
+    width: -moz-min-content;
   }
   .work-item-date{
     width: fit-content;
+    width: -moz-min-content;
   }
   .work-item-tags{
     margin: 20px 0;
