@@ -25,58 +25,30 @@ divider{
 }
 
 #sidebar{
-  background-image: url('assets/sidebar.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  left: -200px;
+  position: fixed;
+  left: 0;
   top: 0;
-  height: 100vh;
-  width: 200px;
+  height: 100%;
+  border-right: solid 1px white;
+  width: 90px;
   z-index: 2;
-  background-color: #111;
+  background-color: #000;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding-top: 28px;
   box-sizing: border-box;
 }
-
-.open{
-/*left: 100px !important; */
-  transform: translateX(100%);
-  transition-duration: 0.3s;
+.sidebar-item {
+  padding-right: 5px;
+}
+.toolbar-icon {
+  width: 40px;
+  height: 40px;
+  margin: 15px auto;
 }
 
-.close{
-/*left: 0; */
-  transform: translateX(0);
-  transition-duration: 0.2s;
-}
-
-#sidebar-toggle{
-    position: absolute;
-    top: 20px;
-    padding: 5px 10px;
-    font-size: 2em;
-    color: #FF0000;
-    cursor: pointer;
-    right: -55px;
-    font-weight: 300;
-}
-
-.sidebar-item{
-  margin: 15px 0;
-  font-weight: 400;
-  line-height: 0px;
-  padding: 3px 20px;
-  cursor: pointer;
-  color: #ddd;
-}
-.sidebar-item:hover{
-  border-bottom: 4px solid red;
-  margin: 14px 0;
-}
 
 .page-title{
   padding: 20px 0;
@@ -167,15 +139,12 @@ img{
   padding: 2px 10px;
   font-size: 1em;
   font-weight: 300;
-  background-color: crimson;
-  box-shadow: 6px 8px purple;
   margin-bottom: 50px;
   letter-spacing: -3px;
 }
 .play-item{
   display: flex;
   align-items: center;
-  padding: 50px 10px;
 }
 .play-item-text{
   width: fit-content;
@@ -201,8 +170,11 @@ img{
   letter-spacing: 0;
 }
 .play-item-image{
-  box-shadow: 10px 9px gray;
-  border: 9px solid white;
+  width: 100%;
+  height: 100%;
+}
+.play-item-image img {
+  width: 100%;
 }
 .skills{
   display: inline-block;
@@ -236,7 +208,7 @@ img{
 .work-heading{
   margin: 0 0 50px;
   border-bottom: solid 1px grey;
-  letter-spacing: -2px;
+  letter-spacing: 0;
   font-weight: 300;
   padding-bottom: 8px;
 }
@@ -284,25 +256,9 @@ img{
   body{
     font-size: 3em;
   }
-  #sidebar{
-    width: 85vw;
-    left: -85%;
-    padding: 100px 0 0 20px;
-  }
-  .sidebar-item{
-    font-size: 1.4em;
-    margin: 65px 0;
-    color: darkgray;
-  }
-  .sidebar-item:hover{
-    border:0;
-    margin: 65px 0;
-  }
-  #sidebar-toggle{
-    right: -135px;
-  }
+
   .social{
-    margin-top: 100px;
+    margin-top: 120px;
   }
   .social>*{
     padding: 2px 13px;
@@ -311,6 +267,7 @@ img{
     margin: 120px 0;
     font-size: 14px;
     width: 80vw;
+    margin-left: 30px;
   }
   .play-shortcut{
     margin-top: 95px;
@@ -319,12 +276,10 @@ img{
   .inner-page{
     font-size: 1.1em;
     padding: 0 7%;
+    margin-left: 50px;
   }
   .skills{
     margin: 50px 0;
-  }
-  .work-heading{
-    margin-top: 100px;
   }
   .work-item-text{
     flex-direction: column;
