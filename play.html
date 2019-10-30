@@ -7,12 +7,12 @@
       function togglesidebar(){
         var classList=document.getElementById('sidebar').classList;
         if(classList.contains('open')){
-          document.getElementById('sidebar-toggle').innerHTML=">>";
+          document.getElementById('sidebar-toggle').innerHTML="☰";
           classList.remove('open');
           classList.add('close');
         }
         else{
-          document.getElementById('sidebar-toggle').innerHTML="<<";
+          document.getElementById('sidebar-toggle').innerHTML="☰";
           classList.remove('close');
           classList.add('open');
         }
@@ -22,7 +22,7 @@
   <body>
     <div id="sidebar">
       <div id="sidebar-toggle" onclick="togglesidebar()">
-        >>
+        ☰
       </div>
       <div class="sidebar-item">
         <a href="index.html">HOME</a>

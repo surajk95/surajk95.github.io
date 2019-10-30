@@ -7,12 +7,12 @@
       function togglesidebar(){
         var classList=document.getElementById('sidebar').classList;
         if(classList.contains('open')){
-          document.getElementById('sidebar-toggle').innerHTML=">>";
+          document.getElementById('sidebar-toggle').innerHTML="☰";
           classList.remove('open');
           classList.add('close');
         }
         else{
-          document.getElementById('sidebar-toggle').innerHTML="<<";
+          document.getElementById('sidebar-toggle').innerHTML="☰";
           classList.remove('close');
           classList.add('open');
         }
@@ -22,7 +22,7 @@
   <body>
     <div id="sidebar">
       <div id="sidebar-toggle" onclick="togglesidebar()">
-        >>
+        ☰
       </div>
       <div class="sidebar-item">
         <a href="index.html">HOME</a>
@@ -42,34 +42,39 @@
         <i class="fab fa-react" title="reactJs"></i>
         <i class="fab fa-js" title="javascript"></i>
         <i class="fab fa-node" title="nodeJs"></i>
+        <i class="fab fa-vuejs" title="vueJs"></i>
         <i class="fab fa-git" title="git"></i>
+        
         <br/>
-        Express,Es6,Redux,MongoDB,Java,MySql
+        Redux, Es6, Jest, Enzyme, Express, MongoDB, Java, MySql
       </div>
-
-      <div class="work-heading"><span>EXPERIENCE</span></div>
-      <div class="work-item">
-        <div class="work-item-text">
-          <span class="work-item-title">MEAWW | ELEVEN INTERNET SERVICES</span>
-          <span class="work-item-description">Front-End Developer</span>
-          <span class="work-item-date">Jan, 2018 - Present</span>
+      <div class="black-container">
+        <div class="work-heading"><span>EXPERIENCE</span></div>
+        <div class="work-item">
+          <div class="work-item-text">
+            <span class="work-item-title">MEAWW | ELEVEN INTERNET SERVICES</span>
+            <span class="work-item-description">Front-End Developer</span>
+            <span class="work-item-date">Jan, 2018 - Present</span>
+          </div>
         </div>
       </div>
-      <div class="work-heading"><span>EDUCATION</span></div>
-      <div class="work-item">
-        <div class="work-item-text">
-          <span class="work-item-title">University of Florida</span>
-          <span class="work-item-description">Master's in Computer Science</span>
-          <span class="work-item-date">2016-2018</span>
+      <div class="black-container">
+        <div class="work-heading"><span>EDUCATION</span></div>
+        <div class="work-item">
+          <div class="work-item-text">
+            <span class="work-item-title">University of Florida</span>
+            <span class="work-item-description">Master's in Computer Science</span>
+            <span class="work-item-date">2016-2018</span>
+          </div>
         </div>
-      </div>
-      <div class="work-item">
-        <div class="work-item-text">
-          <span class="work-item-title">Sri Venkateswara University</span>
-          <span class="work-item-description">Bachelor's in Computer Science</span>
-          <span class="work-item-date">2012-2016</span>
+        <div class="work-item">
+          <div class="work-item-text">
+            <span class="work-item-title">Sri Venkateswara University</span>
+            <span class="work-item-description">Bachelor's in Computer Science</span>
+            <span class="work-item-date">2012-2016</span>
+          </div>
         </div>
-      </div>
+      </div>    
     </div>
   </body>
 </html>
