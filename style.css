@@ -248,6 +248,7 @@ img{
 @media (max-width: 1024px){
   #sidebar {
     width: 15vw;
+    background: linear-gradient(15deg, #131313, #252525);  
   }
   .toolbar-icon {
     width: 2em;
@@ -283,6 +284,10 @@ img{
   .skills{
     margin: 100px 0;
     margin-left: 4em;
+    margin-right: 1em;
+  }
+  .work-item {
+    margin: 30px;
   }
   .work-item-text{
     flex-direction: column;
