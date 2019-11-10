@@ -226,6 +226,7 @@ img{
 }
 .work-item-title {
   margin-top: 7px;
+  color: chartreuse;
 }
 .work-item-description{
   border-bottom: solid 1px #38bd16;
