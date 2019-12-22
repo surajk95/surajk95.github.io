@@ -2,79 +2,103 @@
   <head>
     <title>surajk95</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script>
-      function togglesidebar(){
-        var classList=document.getElementById('sidebar').classList;
-        if(classList.contains('open')){
-          document.getElementById('sidebar-toggle').innerHTML="☰";
-          classList.remove('open');
-          classList.add('close');
-        }
-        else{
-          document.getElementById('sidebar-toggle').innerHTML="☰";
-          classList.remove('close');
-          classList.add('open');
-        }
-      }
-    </script>
   </head>
   <body>
-    <div id="sidebar">
-      <div class="sidebar-item" title="Home">
-        <a href="index.html">
-          <img class="toolbar-icon" src="assets/icons/circle.png" />
-        </a>
-      </div>
-      <div class="sidebar-item" title="Code">
-        <a href="work.html">
-            <img class="toolbar-icon" src="assets/icons/code.png" />
-        </a>
-      </div>
-      <div class="sidebar-item" title="Play">
-          <a href="play.html">
-              <img class="toolbar-icon" src="assets/icons/play.png" />
-          </a>
-        </div>
-    </div>
     <div class="main-content">
       <div class="page-title" id="leetify">SURAJK95</div>
+      <div class="subtitle-container">
+        <span id="code-subtitle" class="subtitle" onclick="showSection('code')">CODE</span>
+        <span>/</span>
+        <span id="portfolio-subtitle" class="subtitle" onclick="showSection('portfolio')">portfolio</span>
+        <span>/</span>
+        <span id="hobbies-subtitle" class="subtitle" onclick="showSection('hobbies')">hobbies</span>
+      </div>
+      
+      <!-- <div class="divider"></div> -->
       <div class="main-content">
-        <div class="intro">
-          > <span class="input-text">init</span><br/>
-          > Front-End Developer<br/>
-          > Visual Artist<br/>
-          <span id="blink-cursor">&nbsp;</span>
+
+        
+      </div>
+
+      <div class="section" id="code" style="display: none;">
+        Code
+      </div>
+
+      <div class="section" id="portfolio" style="display: none;">
+        <div class="section-item hobbies-item">
+          <a href="https://dash.pubninja.com" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">DASH.PUBNINJA.COM</div> 
+            <div class="hobbies-subtitle">Front-End Developer</div>
+          </a>
         </div>
-        <div class="skills">
-            <i class="fab fa-react" title="reactJs"></i>
-            <i class="fab fa-js" title="javascript"></i>
-            <br/>
-            Svelte Js, Redux
-            <br/>ES6, ejs, mustache, Jest, Enzyme, git
+        <div class="section-item hobbies-item">
+          <a href="https://meaww.com" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">MEAWW.COM</div> 
+            <div class="hobbies-subtitle">Front-End Developer</div>
+          </a>
+        </div>
+        <div class="section-item hobbies-item">
+          <a href="https://surajk95.github.io/exhibition/" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">EXHIBITION</div> 
+            <div class="hobbies-subtitle">Showcase/Gallery website, with its own Dashboard.
+            </div>
+          </a>
+        </div>
+        <div class="section-item hobbies-item">
+          <a href="https://surajk95.github.io/darktionary/" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">Darktionary</div> 
+            <div class="hobbies-subtitle">Dictionary, but dark.
+            </div>
+          </a>
+        </div>
+        <div class="section-item hobbies-item">
+          <a href="https://surajk95.github.io/the-open-wall/" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">The Open Wall</div> 
+            <div class="hobbies-subtitle">Reddit type board with upvotes & downvotes.
+            </div>
+          </a>
         </div>
       </div>
+
+      <div class="section" id="hobbies" style="display: none;">
+        <div class="section-item hobbies-item">
+          <a href="https://www.flickr.com/photos/surajk95/" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">Flickr</div> 
+          </a>
+        </div>
+        <div class="section-item hobbies-item">
+          <a href="https://www.youtube.com/fevertrip" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">Youtube</div> 
+          </a>
+        </div>
+        <div class="section-item hobbies-item">
+          <a href="http://deviantart.com/surajk95" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">DeviantArt </div>
+          </a>
+        </div>
+        <div class="section-item hobbies-item">
+          <a href="http://squarezero.github.io/" target="_blank" rel="noopener noreferrer">
+            <div class="plus">+</div> <div class="hobbies-title">Blog </div> 
+          </a>
+        </div>
+      </div>
+
+      <!--Footer-->
       <div class="social">
         <a href="https://github.com/surajk95" target="_blank" aria-label="Github Profile" rel="nofollow noreferrer">
-          <i class="fab fa-github"></i>
+          github
         </a>
         <a href="https://www.linkedin.com/in/surajk95/" target="_blank" aria-label="LinkedIn Profile" rel="nofollow noreferrer">
-          <i class="fab fa-linkedin-in"></i>
+          linkedin
         </a>
         <a href="mailto:surajkukati95@gmail.com" target="_blank" aria-label="Email link" rel="nofollow noreferrer">
-          <i class="far fa-envelope-open"></i>
+          mail
         </a>
       </div>
     </div>
     <script src="leetify.js"></script>
-    <script>window.onload=leetify('SURAJK95', 'white', '5rem', '50');</script>
-    <script>
-    window.onload=blinkcursor();
-    function blinkcursor(){
-      let blinkElement=document.getElementById('blink-cursor');
-      blinkElement.classList.toggle('active-cursor');
-      setTimeout(blinkcursor, 500);
-    }
-    </script>
+    <script src="main.js"></script>
+    <script>window.onload=leetify('SURAJK95', 'white', '1.4em', '50');</script>
+    <script>window.onload=showSection('code');</script>
   </body>
 </html>
