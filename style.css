@@ -58,7 +58,10 @@ a{
   justify-content: center;
   margin-top: 50px;
 }
-
+.highlight {
+  color: white;
+  margin-bottom: 30px;
+}
 .social{
   position: fixed;
   bottom: 0;
