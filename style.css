@@ -233,6 +233,10 @@ img{
 @media (max-width: 1024px){
   body{
     font-size: 3em;
+    padding: 0 15%;
+  }
+  .subtitle-container {
+    margin: 80px 0;
   }
   .social>*{
     padding: 2px 20px;
