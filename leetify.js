@@ -8,10 +8,10 @@ function leetifyRoutine(firstString, index){
   secondString[index]=options[parseInt(Math.random()*options.length)];
   const finalString=firstString.join('');
   leetifyDiv.innerHTML=`${finalString}`;
-  setTimeout(leetifyRoutine, 25, firstString, index);
+  setTimeout(leetifyRoutine, 70, firstString, index);
 }
 
-function leetify(inputString, color='white', fontSize='32px', speed='25'){
+function leetify(inputString, color='white', fontSize='32px', speed='70'){
   console.log(`leetifying...`);
   var leetifyDiv = document.getElementById('leetify');
   leetifyDiv.style.color=`${color}`;
@@ -24,16 +24,16 @@ function leetify(inputString, color='white', fontSize='32px', speed='25'){
 var codes={
   "A":["A","4","@"],
   "B":["B","8","3"],
-  "C":["C","<"],
+  "C":["C","<", "G"],
   "D":["D"],
   "E":["E","3"],
-  "F":["F","#"],
-  "G":["G","C","9"],
-  "H":["H","#"],
+  "F":["F","#", "H"],
+  "G":["G", "C", "<"],
+  "H":["H","#", "F"],
   "I":["I","!","1"],
   "J":["J","!"],
   "K":["K","X"],
-  "L":["L","7"],
+  "L":["L","7", "T", "1"],
   "M":["M"],
   "N":["N"],
   "O":["O","0"],
@@ -41,7 +41,7 @@ var codes={
   "Q":["Q","O","&"],
   "R":["R"],
   "S":["S","5","$"],
-  "T":["T","7","1"],
+  "T":["T","7","1", "L"],
   "U":["U","V"],
   "V":["V","U"],
   "W":["W"],
@@ -49,17 +49,17 @@ var codes={
   "Y":["Y","V"],
   "Z":["Z","2"],
   "0":["0","O"],
-  "1":["1","I","J"],
+  "1":["1","T","L","7"],
   "2":["2","Z"],
   "3":["3", "E"],
   "4":["4", "A"],
-  "5":["5","S"],
+  "5":["5","S", "$"],
   "6":["6"],
-  "7":["7", "T"],
+  "7":["7", "T", "1", "L"],
   "8":["8", "B"],
   "9":["9","P"],
   "@":["@","A","4"],
-  "<":["<","C"],
+  "<":["<","C", "G"],
   "#":["#","F","H"],
   "!":["!","I","1","J"],
   "&":["&","Q","O"],
