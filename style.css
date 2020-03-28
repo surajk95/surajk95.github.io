@@ -36,12 +36,16 @@ a{
 }
 .subtitle {
   text-transform: uppercase;
+  letter-spacing: 4px;
   padding: 0 20px;
   cursor: pointer;
 }
 .subtitle:hover {
   text-decoration: line-through;
   color: white;
+}
+.subtitle:hover {
+  color: red;
 }
 .active-subtitle {
   color: #fff;
@@ -59,7 +63,7 @@ a{
   margin-top: 50px;
 }
 .highlight {
-  color: white;
+  color: #7fff00;
   margin-bottom: 30px;
 }
 .social{
@@ -86,6 +90,7 @@ a{
 
 .section {
   text-align: left;
+  text-transform: uppercase;;
 }
 
 .hobbies-item {
