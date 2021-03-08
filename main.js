@@ -1,6 +1,7 @@
 function showSection(sectionName) {
     let sections = document.querySelectorAll('.section');
     let subtitles = document.querySelectorAll(".subtitle");
+    document.body.style.backgroundImage = `url(${sectionName}.svg)`;
     sections.forEach(item => {
         item.style.display = 'none';
     });

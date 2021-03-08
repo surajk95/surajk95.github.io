@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Share+Tech+Mono|PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500|Source+Sans+Pro:300,400,700');
 
 body{
   background-color: #000000;
@@ -29,27 +29,30 @@ a{
 .page-title{
   padding: 20px 0;
   font-family: 'Source Code Pro';
+  font-weight: 500;
   font-size: 1rem;
+  letter-spacing: 4px;
 }
 .subtitle-container {
   margin: 50px 0 20px 0;
 }
 .subtitle {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  font-family: 'Source Sans Pro';
+  font-size: 22px;
+  letter-spacing: 7px;
   padding: 0 20px;
   cursor: pointer;
+  border-radius: 6px;
+  font-weight: 300;
+  padding: 15px 25px;
 }
 .subtitle:hover {
-  text-decoration: line-through;
-  color: white;
-}
-.subtitle:hover {
-  color: red;
+  font-weight: 400;
 }
 .active-subtitle {
   color: #fff;
-  text-decoration: underline;
+  font-weight: 400;
   cursor: default;
 }
 .input-text{
@@ -60,17 +63,27 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
 .highlight {
-  color: #7fff00;
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  letter-spacing: 3px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.skills {
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  background: #0871d23d;
+  padding: 5px 15px;
+  border-radius: 6px;
 }
 .social{
   position: fixed;
   bottom: 0;
   padding-bottom: 20px;
-  background-color: black;
   z-index: 9;
   left: 0;
   width: 100%;
@@ -89,37 +102,19 @@ a{
 }
 
 .section {
-  text-align: left;
-  text-transform: uppercase;;
-}
-
-.hobbies-item {
-  padding: 10px 0;
-}
-
-.hobbies-item>a {
-  color: #7fff00;
-  display: flex;
-}
-.hobbies-item>a>div {
-  display: flex;
+  
 }
 
 .plus {
   transition: transform 0.2s ease-in-out;
 }
-.hobbies-title {
-  padding-left: 10px;
+#engineering-subtitle {
+  background: linear-gradient(45deg, #2DAC3A, #299D3C 50%, #40A663 100%);
+}
+#design-subtitle {
+  background: linear-gradient(45deg, #4A2DAC, #7F299D 50%, #40A663 100%);
 }
 
-.hobbies-subtitle {
-  display: inline-block;
-  margin-left: 30px;
-  color: #dbdbdb;
-}
-.section-item:hover .hobbies-subtitle {
-  color: white;
-}
 img{
   border-radius: 0px;
 }
@@ -175,17 +170,7 @@ img{
 .play-item-image img {
   width: 100%;
 }
-.skills{
-  display: inline-block;
-  text-align: center;
-  font-size: 1em;
-  margin: 0 0 50px;
-}
-.skills i{
-    font-size: 2.5em;
-    cursor: pointer;
-    margin: 10px 5px;
-}
+
 .black-container {
   background-color: rgb(0, 0, 0, 0.7);
   padding: 10px 10px;
@@ -260,11 +245,6 @@ img{
     font-size: 1.1em;
     padding: 0 7%;
     margin-left: 2em;
-  }
-  .skills{
-    margin: 100px 0;
-    margin-left: 4em;
-    margin-right: 1em;
   }
 
   .hobbies-item {
