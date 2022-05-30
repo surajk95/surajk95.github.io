@@ -80,6 +80,25 @@ a{
   bottom: 0;
   right: 0;
 }
+.path {
+  position: absolute;
+}
+.path.topLeft {
+  left: -100%;
+  top: -50%;
+}
+.path.topRight {
+  right: -100%;
+  top: -80%;
+}
+.path.bottomLeft {
+  left: -100%;
+  bottom: -50%;
+}
+.path.bottomRight {
+  right: -70%;
+  bottom: -90%;
+}
 .item {
   cursor: pointer;
   transition: color 0.4s ease-in-out;
