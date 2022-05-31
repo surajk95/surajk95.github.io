@@ -114,6 +114,23 @@ a{
   width: fit-content;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* .path {
+  animation: float 6s ease-in-out infinite;
+} */
+
+
 
 /*      Styles for Mobile Devices     */
 
