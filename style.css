@@ -136,71 +136,34 @@ a{
 
 @media (max-width: 1024px){
   body{
-    font-size: 3em;
-    padding: 0 15%;
+    font-size: 32px;
+    padding: 100px 20px;
   }
-  .subtitle-container {
-    margin: 80px 0;
+  .topLeft {
+    display: block;
   }
-  .social>*{
-    padding: 2px 20px;
+  .path.topLeft {
+    left: -80%;
+    top: -120%;
   }
-  .intro{
-    margin: 120px 0;
-    font-size: 1em;
-    width: 80vw;
-    margin-left: 5em;
+  .path.topRight {
+    right: -80%;
+    top: -140%;
   }
-  .play-shortcut{
-    margin-top: 95px;
-    font-size: 2em;
+  .path.bottomLeft {
+    left: -80%;
+    bottom: -90%;
+    transform: rotate(-30deg);
   }
-  .inner-page{
-    font-size: 1.1em;
-    padding: 0 7%;
-    margin-left: 2em;
+  .path.bottomRight {
+    right: -50%;
+    bottom: -100%;
+    transform: rotate(-160deg);
   }
-
-  .hobbies-item {
-    padding: 20px 0;
-  }
-  .hobbies-item>a {
-    flex-direction: column;
-  }
-  .work-item {
-    margin: 30px;
-  }
-  .work-item-text{
-    flex-direction: column;
-  }
-  .work-item-title{
-    margin: 20px 0;
-  }
-  .play-heading{
-    margin-top: 100px;
-  }
-  .play-item{
-    flex-direction: column;
-  }
-  .play-item-text{
-    margin-bottom: 50px;
-  }
-  .play-item-image img{
-    width: 700px;
-  }
-  .work-item-description{
-    width: fit-content;
-    width: -moz-fit-content;
-  }
-  .work-item-date{
-    width: fit-content;
-    width: -moz-fit-content;
-  }
-  .work-item-tags{
-    margin: 20px 0;
-  }
-  .showcase-mob{
-    box-shadow: none;
+}
+@media (max-width: 1440px), (min-width: 1024px) {
+  .path {
+    transform: scale(0.5);
   }
 }
 
