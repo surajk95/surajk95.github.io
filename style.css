@@ -126,8 +126,8 @@ a{
 	}
 }
 
-/* .path {
-  animation: float 6s ease-in-out infinite;
+/* .section {
+  animation: float 12s ease-in-out infinite;
 } */
 
 
@@ -202,4 +202,42 @@ a{
   .showcase-mob{
     box-shadow: none;
   }
+}
+
+
+/*      Hover animations     */
+.main-content {
+  perspective: 1000px;
+}
+.section {
+  transition: transform 2s;
+}
+.centerContainer {
+  transition: transform 5s;
+}
+
+.leanCornerTopLeft {
+  transform: rotate3d(-4, 7, -1, 50deg) scale(1.1);
+}
+.leanCornerBottomLeft {
+  transform: rotate3d(2, 12, -2, 50deg) scale(1.1);
+}
+.leanCornerTopRight {
+  transform: rotate3d(10, 10, 0, -50deg) scale(1.1);
+}
+.leanCornerBottomRight {
+  transform: rotate3d(-1, 12, -2, -50deg) scale(1.1);
+}
+
+.leanCenterTopLeft {
+  transform: rotate3d(10, -10, 0, -20deg);
+}
+.leanCenterBottomLeft {
+  transform: rotate3d(10, 10, 0, 20deg);
+}
+.leanCenterTopRight {
+  transform: rotate3d(10, 10, 0, -20deg);
+}
+.leanCenterBottomRight {
+  transform: rotate3d(-10, 10, 0, -20deg);
 }
